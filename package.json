@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "concurrently": "latest",
+    "ts-loader": "latest",
+    "tsc": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  },
+  "scripts": {
+    "dev": "concurrently 'npx webpack-dev-server --mode development' 'tsc'",
+    "prod": "webpack --mode production"
+  },
+  "private": true,
+  "main": "index.js",
+  "dependencies": {}
+}

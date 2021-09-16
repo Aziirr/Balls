@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kulki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="main.js"></script>
+    <style>
+        #main {
+            position: relative;
+        }
+
+        .tile {
+            background-color: blueviolet;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            border: 2px solid greenyellow;
+        }
+
+        .ball {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            border-radius: 200%;
+        }
+
+        .preview-ball {
+            width: 30px;
+            height: 30px;
+            border-radius: 200%;
+            margin: 5px;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row
+        }
+
+        #preview {
+            position: sticky;
+            margin-left: 50%;
+            text-align: center
+        }
+        #points {
+            position: sticky;
+            left: 70%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div id="main"></div>
+    <div id="preview">Kolejne kule: <br/>
+        <div class="flex">
+            <div class="preview-ball"></div>
+            <div class="preview-ball"></div>
+            <div class="preview-ball"></div>
+        </div>
+    </div>
+    <div id="points"> Twoje punkty: 0</div>
+</div>
+</body>
+</html>
+
